@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="orderForm.css">
+</head>
+
+<body>
+
+    <h1>🛍️ Order Form</h1>
+
+    <form action="action3">
+        <table   cellpadding="15">
+            <tr>
+                <td><label for="dname">🍽️ Dish Name:</label></td>
+                <td><input type="text" placeholder="Type here..." name="dname" id="dname" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="qntty">🔢 Quantity:</label></td>
+                <td><input type="number" placeholder="Enter the quantity" name="qntty" id="qntty" min="1" value="1" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="contact">📞 Your Contact Number:</label></td>
+                <td><input type="tel" id="contact" name="contact" value="+91 " maxlength="14" pattern="\+91[0-9]{10}" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="address">🏠 Delivery Address:</label></td>
+                <td><textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your full address" required></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="delivery-time">📅 Preferred Delivery Time:</label></td>
+                <td><input type="time" id="delivery-time" name="delivery-time" required></td>
+            </tr>
+
+            <tr>
+                <td><label>💳 Payment Method:</label></td>
+                <td>
+                    <input type="radio" id="cod" name="payment" value="Cash on Delivery" required>
+                    <label for="cod">Cash on Delivery</label><br>
+                    <input type="radio" id="online" name="payment" value="Online Payment" required>
+                    <label for="online">Online Payment</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <label for="odrBtn">🛒</label>
+                    <button type="submit" id="odrBtn"><a href="index.html">Place Order</a></button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
