@@ -59,8 +59,14 @@ footer {
 /* Footer Links */
 footer a {
     color: #ffccbc; /* Light orange */
+    
 }
 
 footer a:hover {
     color: #ff8a65; /* Brighter orange on hover */
 }
+
+footer, section, p, form, ul{
+    list-style:none;
+}
+
